@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Hyperflick</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Channel Plugin Scripts -->
+<script>
+    (function() {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+      }
+      var ch = function() {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function(args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    ChannelIO('boot', {
+      "pluginKey": "0f46d83e-641a-4583-b050-71793abdad54"
+    });
+  </script>
+  <!-- End Channel Plugin -->
+        <div class="loader">
+            <img alt="loading" height="100" src="https://cdn.discordapp.com/attachments/864719340048482304/865516546184183808/load-icon-png-7969.png" width="100">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent font-weight-light position-fixed w-100">
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex w-100 align-items-center justify-content-center" id="mainNav">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-target="#home" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="#features" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="#shop" href="#shop">Stores</a>
+                    </li>
+                    <li class="text-xperia nav-item text-center d-lg-block d-none">
+                        <a class="nav-link" href="#">
+                            <img alt="" class="navBarLogo" height="70" src="images\logo.png?1b563b2de0785b7d185dbc2020f57486">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="#feedback" href="#feedback">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="#gallery" href="#gallery">Gallery &amp; Downloads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="#contact" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main style="display:none">
+            <div id="fullPage">
+                <div class="scrollIndicator scrollIndicator--animation-pulse">
+                    <div class="scrollIndicator__wrapper">
+                        <p class="scrollIndicator__text font-italic font-weight-bolder">Scroll</p>
+                        <div class="scrollIndicator__rectangle"></div>
+                    </div>
+                </div>
+                <section class="pageSection" id="home" style="background-image:url(images/home_bg.png)">
+                    <div class="watermark d-none d-lg-block text-uppercase font-weight-bolder">
+                        <p class="watermark__title font-weight-bolder m-0">Status</p>
+                        <p class="watermark__description">Undetected</p>
+                    </div>
+                    <div class="container-fluid h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-md-4">
+                                <header>
+                                    <h1 class="text-uppercase font-weight-bolder heading">
+                                        <span class="heading__upper">A tool for Professionals</span>
+                                        <br>
+                                        <span class="heading__productName">
+                                            <span class="heading__firstLine">Hyper</span>
+                                            <svg fill="transparent" height="120" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                                <title>Flick</title>
+                                                <defs>
+                                                    <lineargradient id="gradient" y1="0" y2="1">
+                                                        <stop offset="0" stop-color="#7ffda7"></stop>
+                                                        <stop offset="1" stop-color="#44f0ff"></stop>
+                                                    </lineargradient>
+                                                </defs>
+                                                <g>
+                                                    <text id="text" stroke="url(#gradient)" stroke-width="2" y="100">Flick</text>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </h1>
+                                </header>
+                            </div>
+                            <div class="col-md-4 d-none d-xl-block">
+                                <div class="animation">
+                                    <div class="animation__boxContainer">
+                                        <img alt="" class="animation__box mw-100 mh-100" src="images\box_no_icon.png?ea5407cb0989cdb53bb7760cb0237327">
+                                        <img alt="" class="animation__logo mw-100 mh-100" src="images\logo_box.png?494ca7df46e15fd153f4c6e93c32f43d">
+                                    </div>
+                                    <img alt="" class="animation__shadow mw-100 mh-100" src="images\box_shadow.png?24ea5f6785c98418636382f258bdf8f9">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="about">
+                                    <div>
+                                        <h2 class="about__heading">
+                                            About
+                                            <br>
+                                            <span class="about__subheading text-uppercase font-weight-bolder">Hyperflick</span>
+                                        </h2>
+                                    </div>
+                                    <p class="about__content text-secondary">
+                                        Hyperflick is the No.1 Most Safe, Legit and Advanced OW Software Its designed in such a way that it pleases the needs of High Rank Professional Players. With the Security of HyperVisor and No.1 Support and Legit Performance in the Market, Hyperflick is now the Industry Standards in OW.
+                                    </p>
+                                    <div>
+                                        <a class="gradientButton" data-target="#gallery" href="#gallery">
+                                            <span>Gallery &amp; Downloads</span>
+                                        </a>
+                                        <br>
+                                        <a class="gradientButton" href="https://discord.gg/aNwDrktQVN">
+                                            <span>Discord</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pageSection" id="features" style="background-image:url(images/features_bg.png)">
+                    <div class="watermark d-none d-lg-block text-uppercase font-weight-bolder">
+                        <p class="watermark__title font-weight-bolder m-0">Paimon</p>
+                        <p class="watermark__description">Ow No.1 Cheat Shop</p>
+                    </div>
+                    <div class="container-fluid h-100">
+                        <div class="d-flex h-100 align-items-center justify-content-center flex-column">
+                            <div class="sectionName text-center">
+                                <h3 class="sectionName__upper font-weight-bolder">Hyperflick</h3>
+                                <h2 class="sectionName__main font-weight-bolder font-italic">Features</h2>
+                            </div>
+                            <div class="featureBadges">
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\hypervisor.png?95e4c4efac73a4a163ca478ed0f5841f">
+                                    <h4 class="featureBadge__name">Hypervisor Tech</h4>
+                                </div>
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\aim.png?6424c232f97ac18ab64c665608197cae">
+                                    <h4 class="featureBadge__name">Silent Aim</h4>
+                                </div>
+                                <div class="featureBadge"><img alt="" class="featureBadge__icon" src="images\ghost_aim.png?d6ce497acca2db676baeda3f9f2a0dd4">
+                                    <h4 class="featureBadge__name">Ghost Aim</h4>
+                                </div>
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\humanizer.png?f752638cd285eb40943afc88df81661f">
+                                    <h4 class="featureBadge__name">Phantasam Humanizer</h4>
+                                </div>
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\flick.png?7860e227fd0f53e3699657b0af301399">
+                                    <h4 class="featureBadge__name">Smooth Flicks Profile Dependent</h4>
+                                </div>
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\predictions.png?776d7923bd78a54b575df50f0c75e1af">
+                                    <h4 class="featureBadge__name">Gravity Based Predictions</h4>
+                                </div>
+                                <div class="featureBadge"><img alt="" class="featureBadge__icon" src="images\tracking.png?b874fc39435202ea4e9003363c670833">
+                                    <h4 class="featureBadge__name">Smooth X-Y Tracking</h4>
+                                </div>
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\assist.png?71c8e851b744cc2ff5b14a0536637c66">
+                                    <h4 class="featureBadge__name">Skill Assist</h4>
+                                </div>
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\skill.png?3d929a52e82b90f20e142d286ab266a2">
+                                    <h4 class="featureBadge__name">Auto Skill</h4>
+                                </div>
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\esp.png?2223b348ccecd509f14ad6deac33e747">
+                                    <h4 class="featureBadge__name">Outline ESP</h4>
+                                </div>
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\object_esp.png?66b74fdfaffde618f85494a2af7abec5">
+                                    <h4 class="featureBadge__name">Enemy Objects ESP</h4>
+                                </div>
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\spoofer.png?309ce7fb8dea19846c682ff5d1ba9ea8">
+                                    <div>
+                                        <h4 class="featureBadge__name">Inbuild Spoofer</h4>
+                                        <h5 class="featureBadge__extra">(Avoid HWID bans)</h5>
+                                    </div>
+                                </div>
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\auto_melee.png?fc40bc92b9f7b487bca6737d9f4e1130">
+                                    <h4 class="featureBadge__name">Auto Meele</h4>
+                                </div>
+                                <div class="featureBadge">
+                                    <img alt="" class="featureBadge__icon" src="images\protection.png?7d2e334e40efcd533fbcd93510695f69">
+                                    <h4 class="featureBadge__name">Memory Leak Protection</h4>
+                                </div>
+                            </div>
+                            <div class="warning text-center">
+                                <h3 class="warning__heading">Warning</h3>
+                                <p class="warning__text">This will make you in-game god so watch out!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectionDetails d-none d-xl-block">
+                        <p class="sectionDetails__name">Features</p>
+                        <p class="sectionDetails__description font-weight-lighter">
+                            Hyperflick uses the most advanced methods to keep your account safe and secured, currently its considered the best and consistent long time Undectected OW Software. Using the Phantasm Humanizer with the security of Hypervisor and V-Tech, we assure you for a long time sustains of your accounts.
+                        </p>
+                    </div>
+                </section>
+                <section class="pageSection" id="shop" style="background-image:url(images/shop_bg.png)">
+                    <div class="watermark d-none d-lg-block text-uppercase font-weight-bolder">
+                        <p class="watermark__title font-weight-bolder m-0">Paimon</p>
+                        <p class="watermark__description">Ow No.1 Cheat Shop</p>
+                    </div>
+                    <div class="container-fluid h-100">
+                        <div class="d-flex h-100 align-items-center justify-content-center">
+                            <div class="d-flex justify-content-center">
+                                <div class="storeCard text-center mx-5 d-flex flex-column">
+                                    <h3 class="storeCard__name font-weight-bolder font-italic">How to buy?</h3>
+                                    <h4 class="storeCard__decorationText">Store</h4>
+                                    <p class="storeCard__description flex-grow-1">
+                                        You can join our discord server and open the ticket and purchase products with account transactions and gift certificates.
+                                    </p>
+                                    <a class="plainButton storeCard__button" href="https://discord.gg/aNwDrktQVN">Discord</a>
+                                </div>
+                                <div class="storeCard text-center mx-5">
+                                    <h3 class="storeCard__name font-weight-bolder font-italic">Contact Us</h3>
+                                    <h4 class="storeCard__decorationText">Channel Talk</h4>
+                                    <p class="storeCard__description">
+                                        Click below to visit the server to purchase bank transfers and gift certificates. Please read the product description carefully before purchasing. The product description is on the server.
+                                    </p>
+                                    <div class="cheatTiers">
+                                        <h4 class="cheatTiers__header text-uppercase font-italic font-weight-bolder">Products</h4>
+                                        <div class="cheatTiers__container font-weight-light">
+                                            <div class="cheatTier">
+                                                <a href="https://discord.gg/aNwDrktQVN">
+                                                    <span class="cheatTier__number font-weight-bold">1</span>
+                                                    <br>
+                                                    Basic
+                                                </a>
+                                            </div>
+                                            <div class="cheatTier">
+                                                <a href="https://discord.gg/aNwDrktQVN">
+                                                    <span class="cheatTier__number font-weight-bold">2</span>
+                                                    <br>
+                                                    Ultra
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="plainButton storeCard__button" href="https://paimon.channel.io/">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectionDetails d-none d-xl-block">
+                        <p class="sectionDetails__name">Stores</p>
+                        <p class="sectionDetails__description font-weight-lighter">
+                            Disclaimer :- The buyer is held responsible for the service he is opting for, hence once bought the process is irreverisble and the buyer must agree to Purchase Regulations and read the product description carefully before buying.
+                        </p>
+                    </div>
+                </section>
+                <section class="pageSection" id="feedback" style="background-image:url(images/feedback_bg.png)">
+                    <div class="watermark d-none d-lg-block text-uppercase font-weight-bolder">
+                        <p class="watermark__title font-weight-bolder m-0">Paimon</p>
+                        <p class="watermark__description">Ow No.1 Cheat Shop</p>
+                    </div>
+                    <div class="container-fluid h-100">
+                        <div class="feedbackCarousel">
+                            <div class="feedbackCarousel__carousel">
+                                <div>
+                                    <div class="feedbackCard">
+                                        <div class="feedbackCard__image"></div>
+                                        <h3 class="feedbackCard__author">찬망이</h3>
+                                        <p class="feedbackCard__content">사용방법 하나하나 다몰랐는데 원격으로 다 실행하고 알려주셨어요 너무 감사합니다 !!!! 한 10분 쓰고있는데 너무 좋네요 자주 이용할거같아용</p>
+                                        <h4 class="feedbackCard__starsHeader">User Rating</h4>
+                                        <div class="feedbackCard__stars">
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="feedbackCard">
+                                        <div class="feedbackCard__image"></div>
+                                        <h3 class="feedbackCard__author">뿌잉</h3>
+                                        <p class="feedbackCard__content">첨에 에데 일주일써보고 하플이 나와서 하플 일주일써봤는데요 분명 장단점이 있긴합니다만.  그래도 하플이 여러가지 조정할것도없고 편하긴하네요. 첨에 마우스 사이드클릭이 어색하긴한데. 몇번써보면 편해여~~</p>
+                                        <h4 class="feedbackCard__starsHeader">User Rating</h4>
+                                        <div class="feedbackCard__stars">
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="feedbackCard">
+                                        <div class="feedbackCard__image"></div>
+                                        <h3 class="feedbackCard__author">살육하는천사/호크아이</h3>
+                                        <p class="feedbackCard__content">너무 좋아요 처음이라 이것저것 너무 귀찮게 물어볼때마다 친절하게 알려주시고 감사합니다</p>
+                                        <h4 class="feedbackCard__starsHeader">User Rating</h4>
+                                        <div class="feedbackCard__stars">
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="feedbackCard">
+                                        <div class="feedbackCard__image"></div>
+                                        <h3 class="feedbackCard__author">ssm</h3>
+                                        <p class="feedbackCard__content">디코가 익숙치 않은데 친절하게 다 알려주셔서 성공했습니다!!!!!!!! 감사합니다!!!!!!!!!!! 자주 이용할게요!!!</p>
+                                        <h4 class="feedbackCard__starsHeader">User Rating</h4>
+                                        <div class="feedbackCard__stars">
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                            <div class="feedbackCard__star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button aria-label="previous feedback" class="feedbackCarousel__prevButton"></button>
+                        <button aria-label="next feedback" class="feedbackCarousel__nextButton"></button>
+                    </div>
+                    <div class="sectionDetails d-none d-xl-block">
+                        <p class="sectionDetails__name">Feedback</p>
+                    </div>
+                </section>
+                <section class="pageSection" id="gallery" style="background-image:url(images/gallery_bg.png)">
+                    <div class="watermark d-none d-lg-block text-uppercase font-weight-bolder">
+                        <p class="watermark__title font-weight-bolder m-0">Paimon</p>
+                        <p class="watermark__description">Ow No.1 Cheat Shop</p>
+                    </div>
+                    <div class="d-flex container-fluid h-100 align-items-center justify-content-center">
+                        <div class="videoContainer">
+                            <div class="videoContainer__video" style="border-image-slice:1;border-image-source:linear-gradient(to right,#7ffda7,#44f0ff)">
+                                <iframe allowfullscreen="" frameborder="0" height="100%" src="https://streamable.com/e/2inzxr" style="width:100%;height:100%;position:absolute;left:0;top:0;overflow:hidden" width="100%">
+                                </iframe>
+                            </div>
+                            <p>
+                                Want to download our intro for fanmade fragmovie? 
+                                <a class="gradientLink" href="videos\hyperflick.mp4">
+                                    Click here
+                                </a>
+                            </p>
+                            <div>
+                                <a class="gradientButton mx-2" href="https://cdn.discordapp.com/attachments/842228366711062528/851181853402595368/3eadeca0df74960f.pdf">
+                                    <span>Download Guide</span>
+                                </a>
+                                <a class="gradientButton mx-2" href="https://cdn.discordapp.com/attachments/842228366711062528/846814992485711882/HF_07122020.zip">
+                                    <span>Download Loader</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pageSection" id="contact" style="background-image:url(images/gallery_bg.png)">
+                    <div class="watermark watermark--position-center d-none d-lg-block text-uppercase font-weight-bolder">
+                        <p class="watermark__title font-weight-bolder m-0">Paimon</p>
+                        <p class="watermark__description">Ow No.1 Cheat Shop</p>
+                    </div>
+                    <div class="d-flex container-fluid h-100 align-items-center justify-content-center flex-column">
+                        <div class="contactForm">
+                            <img alt="" class="my-2" height="22" src="images\hand.png?fd69c1249fcaf09bd1c304c962d730d6" width="23">
+                            <h3 class="contactForm__heading">
+                                <span class="contactForm__highlight">HWID</span>
+                                 Release Application Form
+                                </h3>
+                                <form action="https://formspree.io/f/mnqrgjdd" method="POST">
+                                    <label class="contactForm__control">
+                                        Discord Nickname
+                                        <input class="gradientInput" name="name" placeholder="example#0000">
+                                    </label>
+                                    <label class="contactForm__control">
+                                        E-mail 
+                                        <input class="gradientInput" name="_replyto" placeholder="john@example.com" type="email">
+                                    </label>
+                                    <label class="contactForm__control">
+                                        Reason 
+                                        <input class="gradientInput" name="reason" placeholder="State your reason">
+                                    </label>
+                                    <label class="contactForm__control">
+                                        ID & Code 
+                                        <textarea class="gradientInput gradientInput--border-none" name="message" placeholder="Please write down your ID and code"></textarea>
+                                    </label>
+                                    <input aria-label="submit" class="gradientButton" type="submit" value="&nbsp;&nbsp;Submit&nbsp;&nbsp;">
+                                </form>
+                            </div>
+                            <p class="separator">
+                                Or try with
+                            </p>
+                            <div class="buttons">
+                                <a class="gradientButton gradientButton--shape-rectangle gradientButton--indicate-status mx-2" href="https://paimon.channel.io/">
+                                    <span>Contact Us</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <script src="index.js">
+            </script>
+<script>
+    var keydownCtrl = 0;
+    var keydownShift = 0;
+    
+    document.onkeydown=keycheck;
+    document.onkeyup=uncheckCtrlShift;
+    
+    function keycheck()
+    {
+          switch(event.keyCode){ 
+            case 123:event.keyCode='';return false; break; //F12
+            case 17:event.keyCode='';keydownCtrl=1;return false; break; //컨트롤키
+          }
+    
+          if(keydownCtrl) return false;
+    }
+    
+    function uncheckCtrlShift()
+    {
+          if(event.keyCode==17)      keydownCtrl=0;
+          if(event.keyCode==16)      keydownShift=0;
+    }
+    
+    
+        function click()
+    {
+        if ((event.button==2) || (event.button==2)) 
+            {alert('[ 마우스 오른쪽 클릭 ] / [ 개발자 모드 ] / [ F12 ] 금지 입니다.');}
+    }
+    document.onmousedown=click;
+    
+    </script>
+    </body></html>
